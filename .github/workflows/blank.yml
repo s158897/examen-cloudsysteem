@@ -1,0 +1,13 @@
+- name: Repo Visualizer 
+  uses: githubocto/repo-visualizer@0.9.1
+  with:    
+    output_file: diagram.svg
+    excluded_paths: node_modules,bower_components,dist,out,build,eject,.next,.netlify,.yarn,.vscode,package-lock.json,yarn.lock
+    excluded_globs: "frontend/*.spec.js;**/*.{png,jpg};**/!(*.module).ts"    
+    root_path: ''     
+    max_depth: 9
+    commit_message: Repo visualizer: updated diagram
+    branch: diagram    
+    should_push: true    
+    artifact_name: diagram    
+    file_colors: {}
